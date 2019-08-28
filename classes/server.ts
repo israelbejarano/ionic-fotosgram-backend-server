@@ -9,6 +9,6 @@ export default class Server {
     }
  
     start() {
-        this.app.listen(this.port, () => { console.log('server listening') });
+        this.app.listen(this.port, () => { console.log(`server listening en puerto ${this.port}`) });
     }
 }
