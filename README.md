@@ -6,6 +6,8 @@ Para ejecutarlo, es necesario instalar los módulos de node usando el comando:
 npm install
 ```
 
+### Explicar como levantarlo y generación carpeta dist/
+
 
 ## Documentacion de la API
 
