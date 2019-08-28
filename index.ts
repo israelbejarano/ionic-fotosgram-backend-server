@@ -1,1 +1,7 @@
-console.log('hola mundo');
+import Server from './classes/server';
+
+const server = new Server();
+
+
+// levantar el servidor
+server.start();
