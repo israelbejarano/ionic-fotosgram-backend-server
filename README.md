@@ -6,7 +6,16 @@ Para ejecutarlo, es necesario instalar los módulos de node usando el comando:
 npm install
 ```
 
-### Explicar como levantarlo y generación carpeta dist/
+### Levantar el proyecto en desarrollo
+1. dentro del directorio backend-server levantar el servidor:
+
+		1.1 en un terminal y ejecutar ``tsc -w``
+
+		1.2 en otro terminal ejecutar ``nodemon dist/``
+
+2. tener levantado con otro terminal la BBDD para ello hacer cd 'C:\Program Files\MongoDB\Server\4.0\bin\'
+
+3. dentro de este dir ejecutar .\mongod.exe o .\mongod.exe --dbpath="c:\data\db"
 
 
 ## Documentacion de la API
