@@ -8,19 +8,19 @@ export default class Token {
 
     constructor() { }
 
-    static getJwtToken( payload: any ): string {
+    static getJwtToken(payload: any): string {
         return jwt.sign({
             usuario: payload
         }, this.seed, { expiresIn: this.caducidad });
     }
 
-    static comprobarToken( userToken: string ) {
-        return new Promise( (resolve, reject ) => {
-            jwt.verify( userToken, this.seed, ( err, decoded ) => {
-                if ( err ) {
+    static comprobarToken(userToken: string) {
+        return new Promise((resolve, reject) => {
+            jwt.verify(userToken, this.seed, (err, decoded) => {
+                if (err) {
                     reject();
                 } else {
-                    resolve( decoded );
+                    resolve(decoded);
                 }
             })
         });
